@@ -1,6 +1,6 @@
 function Grass(l, w) {
-  if(frameCount<18) this.x = frameCount*40;
-  else this.x = width+100;
+  if(frameCount<18) this.x = frameCount*40; //if beginning of game quickly add grass
+  else this.x = width+100;                  //normal grass added off screen
   this.speed = 4;
 
   this.show = function() {
@@ -26,13 +26,14 @@ function Grass(l, w) {
 }
 
 function Build(w, h) {
-  if(frameCount<18) this.x = frameCount*40;
-  else this.x = width+100;
+  if(frameCount<18) this.x = frameCount*40; //if beginning of game quickly add buildings
+  else this.x = width+100;                  //normal buildings added off screen
   this.speed = 3;
-  this.neww = floor(w) * 10;
-  if (this.neww % 20 == 0) this.neww = this.neww + 10;
+  this.neww = floor(w) * 10;                //make building width multiple of 10
+  if (this.neww % 20 == 0) this.neww = this.neww + 10; //make sure building width is odd odd 10s (30, 50, etc) so window placement is symetric
   this.show = function() {
     push();
+      //add windows
       stroke(0);
       fill(213, 234, 202);
       rect(this.x, 500-h, this.neww, 100+h);
@@ -59,8 +60,8 @@ function Build(w, h) {
 }
 
 function Cloud(l, w) {
-  if(frameCount<18) this.x = frameCount*40;
-  else this.x = width+100;
+  if(frameCount<18) this.x = frameCount*40; //if beginning of game quickly add clouds
+  else this.x = width+100;                  //normal clouds added off screen
   this.speed = 1;
 
   this.show = function() {
