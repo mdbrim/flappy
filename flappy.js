@@ -16,7 +16,7 @@ function setup() {
 
   button = createButton('Play Again');
   button.parent('sketch-holder');
-  button.position(width/2 - 13, height/2 + 10);
+  button.position(width/2, height/2 + 10);
   button.mousePressed(reset);
   button.hide();
 
