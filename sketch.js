@@ -100,8 +100,6 @@ function draw() {
   
   if(score>topscore) topscore = score;
 
-  //if (run % 75 == 45) hit = false;
-
   //scoreboard
   fill(238, 238, 238, 200);
   rect(450, 5, 140, 50);
