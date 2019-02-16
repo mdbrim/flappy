@@ -16,7 +16,7 @@ function setup() {
 
   button = createButton('Play Again');
   button.parent('sketch-holder');
-  button.position(width/2 - 20, height/2 + 10);
+  button.position(width/2 - 40, height/2 + 10);
   button.mousePressed(reset);
   button.hide();
 
@@ -94,7 +94,7 @@ function draw() {
   }
 
   if (run % 75 == 35 && run > 35 && (!hit)) {
-    score = score + 20;
+    score = score + 40;
   }
   
   if(score>topscore) topscore = score;
