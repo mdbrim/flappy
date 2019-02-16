@@ -25,10 +25,10 @@ function Pipe() {
       if (this.highlight) {
         fill(255, 0, 0);
       }
-      rect(this.x, 0, this.w, this.top);
-      rect(this.x, height-this.bottom, this.w, this.bottom);
-      rect(this.x - 10, this.top - 40, this.w + 20, 40);
-      rect(this.x - 10, height-this.bottom, this.w + 20, 40);
+      rect(this.x, 0, this.w, this.top);  //draw top pipe
+      rect(this.x, height-this.bottom, this.w, this.bottom);  //draw bottom pipe
+      rect(this.x - 10, this.top - 40, this.w + 20, 40);      //draw top pipe cap
+      rect(this.x - 10, height-this.bottom, this.w + 20, 40); //draw bottom pipe cap
     pop();
   }
 
