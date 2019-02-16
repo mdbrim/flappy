@@ -33,10 +33,11 @@ function Build(w, h) {
   if (this.neww % 20 == 0) this.neww = this.neww + 10; //make sure building width is odd odd 10s (30, 50, etc) so window placement is symetric
   this.show = function() {
     push();
-      //add windows
+      //draw building
       stroke(0);
       fill(213, 234, 202);
       rect(this.x, 500-h, this.neww, 100+h);
+      //add windows
       for (var j = 0; j < 200; j+=20) {
         for (var i = 0; i < this.neww - 20; i+=20) {
           fill(255);
