@@ -84,5 +84,4 @@ function Cloud(l, w) {
       return false;
     }
   }
-
 }
